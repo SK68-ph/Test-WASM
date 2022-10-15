@@ -1,0 +1,22 @@
+﻿@page "/test"
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Lets G!</h1>
+
+<p role="status">GG: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Increase</button>
+<button class="btn btn-secondary" @onclick="DecrementCount">Decrease</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }private void DecrementCount()
+    {
+        currentCount--;
+    }
+}
